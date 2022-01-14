@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  aleph:
+    image: deuszx/local-aleph:latest
+    ports:
+      - "30334:30334"
+      - "9933:9933"
+      - "9944:9944"
+  polkadotui:
+    container_name: polkadotui
+    image: jacogr/polkadot-js-apps
+    environment:
+      - WS_URL=ws://localhost:9944
+    ports:
+      - 80:80
