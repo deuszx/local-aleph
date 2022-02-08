@@ -8,7 +8,7 @@ EXPOSE 30334 9933 9944
 
 WORKDIR aleph
 
-RUN apt-get update && apt-get install -y && apt install net-tools -y
+RUN apt-get update && apt-get install -y
 
 COPY aleph-node/target/release/aleph-node /usr/local/bin
 RUN chmod +x /usr/local/bin/aleph-node

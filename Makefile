@@ -1,6 +1,6 @@
 setup-submodules:
-	git submodule add --depth 1 https://github.com/Cardinal-Cryptography/aleph-node \
-	git submodule init \
+	git submodule add --depth 1 https://github.com/Cardinal-Cryptography/aleph-node && \
+	git submodule init && \
 	git submodule update
 
 update-aleph-node:
