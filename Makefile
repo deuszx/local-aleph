@@ -8,7 +8,7 @@ update-aleph-node:
 	git fetch origin && \
 	git pull origin main
 
-build-aleph-node: update-aleph-node
+build-aleph-node:
 	cd aleph-node && \
 	cargo build --release -p aleph-node
 
